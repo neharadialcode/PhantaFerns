@@ -251,7 +251,7 @@ body {
     cursor: pointer;
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: var(--color-red);
     box-shadow: 1px 3px 20px #393939;
     text-indent: -9999px;
     display: none;
@@ -280,8 +280,8 @@ body {
 }
 
 #scroll:hover {
-    opacity: 0.9;
-    box-shadow: 1px 1px 20px #2c2c2c;
+
+    box-shadow: 1px 1px 20px #ffffff;
 }
 
 #scroll:hover span {
