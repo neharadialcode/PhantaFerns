@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./assets/style/style.css">
+
+
+
+
+    <title> footer</title>
+</head>
+
+<body>
+    <!-- carousel   slides  -->
+    <section class="my-5">
+        <div class="container">
+
+            <div class="row  carousel-2">
+                <div class="col-xxl-12 col-sm-11 mx-auto position-relative ">
+                    <div class="custom-btns d-none d-sm-block">
+                        <div> <img class="previous-c2" src="./assets/img/Component 2.svg" alt="btn"></div>
+                        <div> <img class="next-c2" src="./assets/img/Component 3.svg" alt="btn"></div>
+                    </div>
+                    <div class="responsStyle2 ">
+
+                        <div class="mx-2">
+                            <img class="w-100" src="./assets/img/Rectangle 21 (1).png" alt="img">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+
+
+
+    <!-- carousel-2  -->
+    <script>
+        $('.responsStyle2').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            nextArrow: '.next-c2',
+            prevArrow: '.previous-c2',
+            responsive: [{
+                    breakpoint: 1300,
+                    settings: {
+
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 576,
+                    settings: {
+                        autoplay: true,
+                        autoplaySpeed: 1000,
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+
+
+</body>
+
+</html>

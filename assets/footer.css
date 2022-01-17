@@ -1,0 +1,20 @@
+ .custom-btns div img {
+     width: 48px;
+     height: auto;
+ }
+
+ .previous-c2 {
+     left: -40px;
+     top: 45%;
+     z-index: 3;
+     position: absolute;
+     cursor: pointer;
+ }
+
+ .next-c2 {
+     right: -40px;
+     top: 45%;
+     z-index: 3;
+     position: absolute;
+     cursor: pointer;
+ }
