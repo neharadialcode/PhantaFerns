@@ -54,6 +54,12 @@ body {
         sans-serif;
     background: url('../img/body-bg.png');
     background-size: cover;
+
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 /*====================================== Media-queries-end =========================================== */
