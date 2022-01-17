@@ -226,12 +226,14 @@ body {
 
 .media-icon a svg {
     transition: all .3s ease-in-out;
+
 }
 
 .media-icon a svg:hover {
     box-shadow: 0px 0px 20px 4px var(--color-white);
     border-radius: 100%;
     background-color: transparent;
+    transform: translateY(-5px);
 }
 
 /* SCROLL TOP CSS START */
