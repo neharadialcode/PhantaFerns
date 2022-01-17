@@ -10,11 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/additional.css">
     <title>overlay</title>
 </head>
 
 <body>
-    <main class="main-top-section py-3 bg-light">
+    <main class="main-top-section py-3 ">
         <!-- NAVBAR -->
         <nav class="navbar-wrapper shadow-white d-flex ">
             <div id="overlay">
@@ -25,32 +26,17 @@
                                 <ul class="list-unstyled">
                                     <li class="py-3 overflow-hidden">
                                         <span class="d-inline-block section-1">
-                                            <a href="#name1-section" class="overlay-links">Name1</a>
+                                            <a href="#Home-section" class="overlay-links">Home </a>
                                         </span>
                                     </li>
                                     <li class="py-3 overflow-hidden">
                                         <span class="d-inline-block section-2">
-                                            <a href="#name2-section" class="overlay-links ">Name2</a>
+                                            <a href="#About-section" class="overlay-links ">About</a>
                                         </span>
                                     </li>
                                     <li class="py-3 overflow-hidden">
                                         <span class="d-inline-block section-3">
-                                            <a href="#name3-section" class="overlay-links">Name3</a>
-                                        </span>
-                                    </li>
-                                    <li class="py-3 overflow-hidden">
-                                        <span class="d-inline-block section-4">
-                                            <a href="#name4-section" class="overlay-links">Name4</a>
-                                        </span>
-                                    </li>
-                                    <li class="py-3 overflow-hidden">
-                                        <span class="d-inline-block section-5">
-                                            <a href="#name5-section" class="overlay-links">Name5</a>
-                                        </span>
-                                    </li>
-                                    <li class="py-3 overflow-hidden">
-                                        <span class="d-inline-block section-6">
-                                            <a href="#name6-section" class="overlay-links">Name6</a>
+                                            <a href="#Collection-section" class="overlay-links">Collection</a>
                                         </span>
                                     </li>
                                 </ul>
@@ -61,28 +47,22 @@
             </div>
             <div class="container">
                 <div class="nav-quantum d-flex align-items-center justify-content-between">
-                    <h1>logo</h1>
-                    <div class="nav-items-wrap ms-auto d-none d-lg-block">
+                    <a href="#">
+                        <img class="nav-logo" src="./assets/img/logo.png" alt="">
+                    </a>
+                    <div class="nav-items-wrap mx-auto d-none d-lg-block">
                         <ul class="nav-items-list list-unstyled align-items-center d-flex m-auto">
                             <li class="n-item px-3 px-xxl-4">
-                                <a href="#name1-section">Name1</a>
+                                <a href="#Home-section">Home </a>
                             </li>
                             <li class="n-item px-3 px-xxl-4">
-                                <a aria-current="page" href="#name2-section">Name2</a>
+                                <a aria-current="page" href="#About-section">About</a>
                             </li>
                             <li class="n-item px-3 px-xxl-4">
-                                <a href="#name3-section">Name3</a>
-                            </li>
-                            <li class="n-item px-3 px-xxl-4">
-                                <a href="#name4-section">Name4</a>
-                            </li>
-                            <li class="n-item px-3 px-xxl-4">
-                                <a href="#name5-section">Name5</a>
-                            </li>
-                            <li class="n-item px-3 px-xxl-4">
-                                <a href="#name6-section">Name6</a>
+                                <a href="#Collection-section">Collection</a>
                             </li>
                         </ul>
+
                     </div>
                     <!-- Toggle Button nav -->
                     <div id="main-menu" class="hamburger-menu d-inline-block d-lg-none">
@@ -90,563 +70,35 @@
                         <span class="sec"></span>
                         <span class="third"></span>
                     </div>
+                    <div class="d-lg-flex d-none align-items-center text-nowrap">
+                        <div class="">
+                            <svg class="me-3" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="21" cy="21" r="21" fill="white" />
+                                <path
+                                    d="M32 14.1351C31.191 14.4959 30.3219 14.7397 29.4082 14.8499C30.3509 14.2822 31.0562 13.3886 31.3925 12.336C30.5068 12.8655 29.5374 13.2382 28.5265 13.4379C27.8467 12.7074 26.9462 12.2232 25.965 12.0605C24.9837 11.8977 23.9766 12.0656 23.0999 12.5381C22.2231 13.0105 21.5259 13.761 21.1164 14.6731C20.7069 15.5852 20.6081 16.6079 20.8353 17.5823C19.0406 17.4916 17.2849 17.0221 15.6821 16.2043C14.0793 15.3865 12.6653 14.2387 11.5318 12.8352C11.1443 13.5081 10.9214 14.2882 10.9214 15.1191C10.921 15.867 11.104 16.6035 11.4542 17.2632C11.8044 17.9229 12.311 18.4854 12.929 18.9007C12.2123 18.8778 11.5114 18.6829 10.8846 18.3322V18.3907C10.8845 19.4397 11.2451 20.4565 11.905 21.2684C12.565 22.0803 13.4838 22.6375 14.5054 22.8453C13.8405 23.0264 13.1435 23.053 12.4668 22.9233C12.7551 23.8259 13.3166 24.6152 14.0727 25.1807C14.8288 25.7462 15.7417 26.0595 16.6835 26.0769C15.0847 27.3402 13.1101 28.0254 11.0774 28.0224C10.7174 28.0225 10.3576 28.0013 10 27.959C12.0633 29.2941 14.4651 30.0027 16.918 30C25.2215 30 29.7609 23.0783 29.7609 17.0752C29.7609 16.8802 29.756 16.6832 29.7473 16.4882C30.6302 15.8455 31.3924 15.0497 31.9981 14.1381L32 14.1351Z"
+                                    fill="black" />
+                            </svg>
+                            <svg class="me-3" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="21" cy="21" r="21" fill="white" />
+                                <path
+                                    d="M31.1765 11.6627C29.3145 10.7947 27.2985 10.1647 25.1985 9.80072C25.18 9.80013 25.1617 9.80359 25.1448 9.81085C25.1279 9.8181 25.1127 9.82898 25.1005 9.84272C24.8485 10.3047 24.5545 10.9067 24.3585 11.3687C22.1311 11.0327 19.8659 11.0327 17.6385 11.3687C17.4425 10.8927 17.1485 10.3047 16.8825 9.84272C16.8685 9.81472 16.8265 9.80072 16.7845 9.80072C14.6845 10.1647 12.6825 10.7947 10.8065 11.6627C10.7925 11.6627 10.7785 11.6767 10.7645 11.6907C6.95646 17.3887 5.90646 22.9327 6.42446 28.4207C6.42446 28.4487 6.43846 28.4767 6.46646 28.4907C8.98645 30.3387 11.4085 31.4587 13.8025 32.2007C13.8445 32.2147 13.8865 32.2007 13.9005 32.1727C14.4605 31.4027 14.9645 30.5907 15.3985 29.7367C15.4265 29.6807 15.3985 29.6247 15.3425 29.6107C14.5445 29.3027 13.7885 28.9387 13.0465 28.5187C12.9905 28.4907 12.9905 28.4067 13.0325 28.3647C13.1865 28.2527 13.3405 28.1267 13.4945 28.0147C13.5225 27.9867 13.5645 27.9867 13.5925 28.0007C18.4085 30.1987 23.6025 30.1987 28.3625 28.0007C28.3905 27.9867 28.4325 27.9867 28.4605 28.0147C28.6145 28.1407 28.7685 28.2527 28.9225 28.3787C28.9785 28.4207 28.9785 28.5047 28.9085 28.5327C28.1805 28.9667 27.4105 29.3167 26.6125 29.6247C26.5565 29.6387 26.5425 29.7087 26.5565 29.7507C27.0045 30.6047 27.5085 31.4167 28.0545 32.1867C28.0965 32.2007 28.1385 32.2147 28.1805 32.2007C30.5885 31.4587 33.0105 30.3387 35.5304 28.4907C35.5584 28.4767 35.5725 28.4487 35.5725 28.4207C36.1884 22.0787 34.5504 16.5767 31.2325 11.6907C31.2185 11.6767 31.2045 11.6627 31.1765 11.6627ZM16.1265 25.0747C14.6845 25.0747 13.4805 23.7447 13.4805 22.1067C13.4805 20.4687 14.6565 19.1387 16.1265 19.1387C17.6105 19.1387 18.7865 20.4827 18.7725 22.1067C18.7725 23.7447 17.5965 25.0747 16.1265 25.0747ZM25.8845 25.0747C24.4425 25.0747 23.2385 23.7447 23.2385 22.1067C23.2385 20.4687 24.4145 19.1387 25.8845 19.1387C27.3685 19.1387 28.5445 20.4827 28.5305 22.1067C28.5305 23.7447 27.3685 25.0747 25.8845 25.0747Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <div>
+                            <button class="red-btn">
+                                Connect wallet
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
         <!-- NAVBAR END -->
     </main>
-    <section class="bg-success">
-        <div class="container my-5">
-            <p class="section-1 " id="name1-section">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus suscipit dolorum ad mollitia
-                aliquam
-                quibusdam minima odit molestias quia vero optio praesentium, adipisci quas ab incidunt iure velit
-                tenetur
-                totam.
-                Eveniet eum repellat dicta ratione alias, quae omnis blanditiis necessitatibus fugit corporis dolores
-                quas
-                dolorum, facilis nobis vitae voluptate, ducimus et? Molestias error soluta ad quidem quas, doloremque
-                vero!
-                Quibusdam ratione recusandae hic praesentium, eius, nam asperiores ullam officiis earum impedit placeat
-                itaque
-                id debitis libero ipsam corporis nemo facilis fugit consectetur repellendus incidunt maiores atque
-                doloremque
-                pariatur. Doloremque, error quae. Suscipit doloribus hic animi nulla soluta? Repudiandae velit
-                accusantium
-                suscipit quam ut omnis quasi ipsam aliquam voluptatibus. In tempore esse adipisci asperiores odit
-                quisquam
-                doloribus cum itaque veritatis. Commodi doloribus nesciunt corrupti veritatis sapiente! Eaque mollitia
-                iure
-                et
-                cum ullam fuga aliquid at consequuntur dolorem tenetur optio fugiat iste perferendis esse voluptatibus
-                ipsum
-                asperiores hic eius porro, deserunt quos magni cumque impedit animi. Velit autem cumque vitae veritatis
-                quisquam
-                voluptate et, qui, debitis labore nihil dolore! Veniam ab quis doloribus corporis quod nisi minus quia
-                laboriosam rerum dolorum aliquam debitis, iure et odio deserunt, sed aliquid animi est cumque officia
-                eius
-                voluptates neque? Maiores molestiae dignissimos ipsam qui officia asperiores libero, voluptatem
-                doloremque.
-                Necessitatibus dolor inventore, obcaecati, illo impedit reprehenderit recusandae non quod minima
-                consequuntur
-                autem velit? Quasi non inventore alias ea porro deleniti quidem iusto, molestias delectus. Eum dolores
-                rerum,
-                nihil eius iste natus alias officia in libero corporis error deleniti quos sit cum voluptatum ex.
-                Officiis
-                cum
-                maiores totam veritatis vero, corporis molestiae itaque libero sequi, rerum ab. Aut ut sapiente fugiat
-                provident
-                sequi atque explicabo, magni necessitatibus. Itaque officia laudantium sint illum eveniet nemo tempora
-                obcaecati
-                odit, debitis, reprehenderit, hic consequuntur architecto voluptatum optio! Temporibus, odit. Atque
-                sapiente
-                repudiandae laborum corrupti animi, ipsum reprehenderit dicta sit! Soluta inventore neque placeat
-                corporis
-                facilis incidunt, dolores quo, doloremque, recusandae assumenda tenetur? Eveniet libero quia enim unde
-                consequuntur cumque qui veniam atque voluptates magnam inventore eos dicta id vel illum rerum asperiores
-                vero
-                harum, iure rem autem voluptatibus at! Eaque ducimus obcaecati perspiciatis similique quod ipsam
-                voluptates
-                porro quidem vero suscipit quae, officia accusantium dignissimos soluta vel mollitia eos tenetur commodi
-                natus
-                enim facere aperiam iusto iure. Ullam quidem incidunt, reiciendis quia dignissimos nihil natus eaque
-                dolor
-                nisi
-                quis asperiores voluptatum, quibusdam cumque impedit deleniti sequi error perferendis unde voluptatem
-                neque
-                explicabo aliquam repudiandae. Assumenda tempore totam repellendus rerum aperiam sapiente, labore
-                commodi
-                saepe
-                non et tempora. Adipisci provident, ipsam voluptatem necessitatibus earum porro perspiciatis ab animi
-                iure
-                officiis, quia excepturi rerum magnam, omnis voluptates assumenda doloribus eveniet placeat! Ipsum
-                pariatur
-                inventore hic autem voluptates sunt facere. Repudiandae aliquid eum sequi eligendi corporis esse
-                doloribus
-                ipsa
-                aspernatur non neque enim, eos illum, harum minus quibusdam porro provident reprehenderit quidem,
-                similique
-                ad
-                doloremque. Fugiat a, odio sed animi magnam itaque ipsum omnis odit quis maxime quod culpa porro placeat
-                illo,
-                temporibus natus doloribus. Quis nisi qui corporis ratione fuga, corrupti dolor accusantium minus sunt,
-                delectus
-                tenetur distinctio, eligendi quas.
 
-            </p>
-
-        </div>
-    </section>
-    <section id="name2-section" class="section-2 bg-danger">
-        <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus suscipit dolorum ad
-                mollitia
-                aliquam
-                quibusdam minima odit molestias quia vero optio praesentium, adipisci quas ab incidunt iure
-                velit tenetur
-                totam.
-                Eveniet eum repellat dicta ratione alias, quae omnis blanditiis necessitatibus fugit corporis
-                dolores quas
-                dolorum, facilis nobis vitae voluptate, ducimus et? Molestias error soluta ad quidem quas,
-                doloremque vero!
-                Quibusdam ratione recusandae hic praesentium, eius, nam asperiores ullam officiis earum impedit
-                placeat
-                itaque
-                id debitis libero ipsam corporis nemo facilis fugit consectetur repellendus incidunt maiores
-                atque
-                doloremque
-                pariatur. Doloremque, error quae. Suscipit doloribus hic animi nulla soluta? Repudiandae velit
-                accusantium
-                suscipit quam ut omnis quasi ipsam aliquam voluptatibus. In tempore esse adipisci asperiores
-                odit quisquam
-                doloribus cum itaque veritatis. Commodi doloribus nesciunt corrupti veritatis sapiente! Eaque
-                mollitia iure
-                et
-                cum ullam fuga aliquid at consequuntur dolorem tenetur optio fugiat iste perferendis esse
-                voluptatibus ipsum
-                asperiores hic eius porro, deserunt quos magni cumque impedit animi. Velit autem cumque vitae
-                veritatis
-                quisquam
-                voluptate et, qui, debitis labore nihil dolore! Veniam ab quis doloribus corporis quod nisi
-                minus quia
-                laboriosam rerum dolorum aliquam debitis, iure et odio deserunt, sed aliquid animi est cumque
-                officia eius
-                voluptates neque? Maiores molestiae dignissimos ipsam qui officia asperiores libero, voluptatem
-                doloremque.
-                Necessitatibus dolor inventore, obcaecati, illo impedit reprehenderit recusandae non quod minima
-                consequuntur
-                autem velit? Quasi non inventore alias ea porro deleniti quidem iusto, molestias delectus. Eum
-                dolores
-                rerum,
-                nihil eius iste natus alias officia in libero corporis error deleniti quos sit cum voluptatum
-                ex. Officiis
-                cum
-                maiores totam veritatis vero, corporis molestiae itaque libero sequi, rerum ab. Aut ut sapiente
-                fugiat
-                provident
-                sequi atque explicabo, magni necessitatibus. Itaque officia laudantium sint illum eveniet nemo
-                tempora
-                obcaecati
-                odit, debitis, reprehenderit, hic consequuntur architecto voluptatum optio! Temporibus, odit.
-                Atque sapiente
-                repudiandae laborum corrupti animi, ipsum reprehenderit dicta sit! Soluta inventore neque
-                placeat corporis
-                facilis incidunt, dolores quo, doloremque, recusandae assumenda tenetur? Eveniet libero quia
-                enim unde
-                consequuntur cumque qui veniam atque voluptates magnam inventore eos dicta id vel illum rerum
-                asperiores
-                vero
-                harum, iure rem autem voluptatibus at! Eaque ducimus obcaecati perspiciatis similique quod ipsam
-                voluptates
-                porro quidem vero suscipit quae, officia accusantium dignissimos soluta vel mollitia eos tenetur
-                commodi
-                natus
-                enim facere aperiam iusto iure. Ullam quidem incidunt, reiciendis quia dignissimos nihil natus
-                eaque dolor
-                nisi
-                quis asperiores voluptatum, quibusdam cumque impedit deleniti sequi error perferendis unde
-                voluptatem neque
-                explicabo aliquam repudiandae. Assumenda tempore totam repellendus rerum aperiam sapiente,
-                labore commodi
-                saepe
-                non et tempora. Adipisci provident, ipsam voluptatem necessitatibus earum porro perspiciatis ab
-                animi iure
-                officiis, quia excepturi rerum magnam, omnis voluptates assumenda doloribus eveniet placeat!
-                Ipsum pariatur
-                inventore hic autem voluptates sunt facere. Repudiandae aliquid eum sequi eligendi corporis esse
-                doloribus
-                ipsa
-                aspernatur non neque enim, eos illum, harum minus quibusdam porro provident reprehenderit
-                quidem, similique
-                ad
-                doloremque. Fugiat a, odio sed animi magnam itaque ipsum omnis odit quis maxime quod culpa porro
-                placeat
-                illo,
-                temporibus natus doloribus. Quis nisi qui corporis ratione fuga, corrupti dolor accusantium
-                minus sunt,
-                delectus
-                tenetur distinctio, eligendi quas.
-
-            </p>
-        </div>
-    </section>
-    <section id="name3-section" class="section-3 bg-primary">
-        <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus suscipit dolorum ad
-                mollitia
-                aliquam
-                quibusdam minima odit molestias quia vero optio praesentium, adipisci quas ab incidunt iure
-                velit tenetur
-                totam.
-                Eveniet eum repellat dicta ratione alias, quae omnis blanditiis necessitatibus fugit corporis
-                dolores quas
-                dolorum, facilis nobis vitae voluptate, ducimus et? Molestias error soluta ad quidem quas,
-                doloremque vero!
-                Quibusdam ratione recusandae hic praesentium, eius, nam asperiores ullam officiis earum impedit
-                placeat
-                itaque
-                id debitis libero ipsam corporis nemo facilis fugit consectetur repellendus incidunt maiores
-                atque
-                doloremque
-                pariatur. Doloremque, error quae. Suscipit doloribus hic animi nulla soluta? Repudiandae velit
-                accusantium
-                suscipit quam ut omnis quasi ipsam aliquam voluptatibus. In tempore esse adipisci asperiores
-                odit quisquam
-                doloribus cum itaque veritatis. Commodi doloribus nesciunt corrupti veritatis sapiente! Eaque
-                mollitia iure
-                et
-                cum ullam fuga aliquid at consequuntur dolorem tenetur optio fugiat iste perferendis esse
-                voluptatibus ipsum
-                asperiores hic eius porro, deserunt quos magni cumque impedit animi. Velit autem cumque vitae
-                veritatis
-                quisquam
-                voluptate et, qui, debitis labore nihil dolore! Veniam ab quis doloribus corporis quod nisi
-                minus quia
-                laboriosam rerum dolorum aliquam debitis, iure et odio deserunt, sed aliquid animi est cumque
-                officia eius
-                voluptates neque? Maiores molestiae dignissimos ipsam qui officia asperiores libero, voluptatem
-                doloremque.
-                Necessitatibus dolor inventore, obcaecati, illo impedit reprehenderit recusandae non quod minima
-                consequuntur
-                autem velit? Quasi non inventore alias ea porro deleniti quidem iusto, molestias delectus. Eum
-                dolores
-                rerum,
-                nihil eius iste natus alias officia in libero corporis error deleniti quos sit cum voluptatum
-                ex. Officiis
-                cum
-                maiores totam veritatis vero, corporis molestiae itaque libero sequi, rerum ab. Aut ut sapiente
-                fugiat
-                provident
-                sequi atque explicabo, magni necessitatibus. Itaque officia laudantium sint illum eveniet nemo
-                tempora
-                obcaecati
-                odit, debitis, reprehenderit, hic consequuntur architecto voluptatum optio! Temporibus, odit.
-                Atque sapiente
-                repudiandae laborum corrupti animi, ipsum reprehenderit dicta sit! Soluta inventore neque
-                placeat corporis
-                facilis incidunt, dolores quo, doloremque, recusandae assumenda tenetur? Eveniet libero quia
-                enim unde
-                consequuntur cumque qui veniam atque voluptates magnam inventore eos dicta id vel illum rerum
-                asperiores
-                vero
-                harum, iure rem autem voluptatibus at! Eaque ducimus obcaecati perspiciatis similique quod ipsam
-                voluptates
-                porro quidem vero suscipit quae, officia accusantium dignissimos soluta vel mollitia eos tenetur
-                commodi
-                natus
-                enim facere aperiam iusto iure. Ullam quidem incidunt, reiciendis quia dignissimos nihil natus
-                eaque dolor
-                nisi
-                quis asperiores voluptatum, quibusdam cumque impedit deleniti sequi error perferendis unde
-                voluptatem neque
-                explicabo aliquam repudiandae. Assumenda tempore totam repellendus rerum aperiam sapiente,
-                labore commodi
-                saepe
-                non et tempora. Adipisci provident, ipsam voluptatem necessitatibus earum porro perspiciatis ab
-                animi iure
-                officiis, quia excepturi rerum magnam, omnis voluptates assumenda doloribus eveniet placeat!
-                Ipsum pariatur
-                inventore hic autem voluptates sunt facere. Repudiandae aliquid eum sequi eligendi corporis esse
-                doloribus
-                ipsa
-                aspernatur non neque enim, eos illum, harum minus quibusdam porro provident reprehenderit
-                quidem, similique
-                ad
-                doloremque. Fugiat a, odio sed animi magnam itaque ipsum omnis odit quis maxime quod culpa porro
-                placeat
-                illo,
-                temporibus natus doloribus. Quis nisi qui corporis ratione fuga, corrupti dolor accusantium
-                minus sunt,
-                delectus
-                tenetur distinctio, eligendi quas.
-
-            </p>
-        </div>
-    </section>
-    <section id="name4-section" class="section-4 bg-dark text-white">
-        <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus suscipit dolorum ad
-                mollitia
-                aliquam
-                quibusdam minima odit molestias quia vero optio praesentium, adipisci quas ab incidunt iure
-                velit tenetur
-                totam.
-                Eveniet eum repellat dicta ratione alias, quae omnis blanditiis necessitatibus fugit corporis
-                dolores quas
-                dolorum, facilis nobis vitae voluptate, ducimus et? Molestias error soluta ad quidem quas,
-                doloremque vero!
-                Quibusdam ratione recusandae hic praesentium, eius, nam asperiores ullam officiis earum impedit
-                placeat
-                itaque
-                id debitis libero ipsam corporis nemo facilis fugit consectetur repellendus incidunt maiores
-                atque
-                doloremque
-                pariatur. Doloremque, error quae. Suscipit doloribus hic animi nulla soluta? Repudiandae velit
-                accusantium
-                suscipit quam ut omnis quasi ipsam aliquam voluptatibus. In tempore esse adipisci asperiores
-                odit quisquam
-                doloribus cum itaque veritatis. Commodi doloribus nesciunt corrupti veritatis sapiente! Eaque
-                mollitia iure
-                et
-                cum ullam fuga aliquid at consequuntur dolorem tenetur optio fugiat iste perferendis esse
-                voluptatibus ipsum
-                asperiores hic eius porro, deserunt quos magni cumque impedit animi. Velit autem cumque vitae
-                veritatis
-                quisquam
-                voluptate et, qui, debitis labore nihil dolore! Veniam ab quis doloribus corporis quod nisi
-                minus quia
-                laboriosam rerum dolorum aliquam debitis, iure et odio deserunt, sed aliquid animi est cumque
-                officia eius
-                voluptates neque? Maiores molestiae dignissimos ipsam qui officia asperiores libero, voluptatem
-                doloremque.
-                Necessitatibus dolor inventore, obcaecati, illo impedit reprehenderit recusandae non quod minima
-                consequuntur
-                autem velit? Quasi non inventore alias ea porro deleniti quidem iusto, molestias delectus. Eum
-                dolores
-                rerum,
-                nihil eius iste natus alias officia in libero corporis error deleniti quos sit cum voluptatum
-                ex. Officiis
-                cum
-                maiores totam veritatis vero, corporis molestiae itaque libero sequi, rerum ab. Aut ut sapiente
-                fugiat
-                provident
-                sequi atque explicabo, magni necessitatibus. Itaque officia laudantium sint illum eveniet nemo
-                tempora
-                obcaecati
-                odit, debitis, reprehenderit, hic consequuntur architecto voluptatum optio! Temporibus, odit.
-                Atque sapiente
-                repudiandae laborum corrupti animi, ipsum reprehenderit dicta sit! Soluta inventore neque
-                placeat corporis
-                facilis incidunt, dolores quo, doloremque, recusandae assumenda tenetur? Eveniet libero quia
-                enim unde
-                consequuntur cumque qui veniam atque voluptates magnam inventore eos dicta id vel illum rerum
-                asperiores
-                vero
-                harum, iure rem autem voluptatibus at! Eaque ducimus obcaecati perspiciatis similique quod ipsam
-                voluptates
-                porro quidem vero suscipit quae, officia accusantium dignissimos soluta vel mollitia eos tenetur
-                commodi
-                natus
-                enim facere aperiam iusto iure. Ullam quidem incidunt, reiciendis quia dignissimos nihil natus
-                eaque dolor
-                nisi
-                quis asperiores voluptatum, quibusdam cumque impedit deleniti sequi error perferendis unde
-                voluptatem neque
-                explicabo aliquam repudiandae. Assumenda tempore totam repellendus rerum aperiam sapiente,
-                labore commodi
-                saepe
-                non et tempora. Adipisci provident, ipsam voluptatem necessitatibus earum porro perspiciatis ab
-                animi iure
-                officiis, quia excepturi rerum magnam, omnis voluptates assumenda doloribus eveniet placeat!
-                Ipsum pariatur
-                inventore hic autem voluptates sunt facere. Repudiandae aliquid eum sequi eligendi corporis esse
-                doloribus
-                ipsa
-                aspernatur non neque enim, eos illum, harum minus quibusdam porro provident reprehenderit
-                quidem, similique
-                ad
-                doloremque. Fugiat a, odio sed animi magnam itaque ipsum omnis odit quis maxime quod culpa porro
-                placeat
-                illo,
-                temporibus natus doloribus. Quis nisi qui corporis ratione fuga, corrupti dolor accusantium
-                minus sunt,
-                delectus
-                tenetur distinctio, eligendi quas.
-
-            </p>
-        </div>
-    </section>
-    <section id="name5-section" class="section-5 bg-danger">
-        <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus suscipit dolorum ad
-                mollitia
-                aliquam
-                quibusdam minima odit molestias quia vero optio praesentium, adipisci quas ab incidunt iure
-                velit tenetur
-                totam.
-                Eveniet eum repellat dicta ratione alias, quae omnis blanditiis necessitatibus fugit corporis
-                dolores quas
-                dolorum, facilis nobis vitae voluptate, ducimus et? Molestias error soluta ad quidem quas,
-                doloremque vero!
-                Quibusdam ratione recusandae hic praesentium, eius, nam asperiores ullam officiis earum impedit
-                placeat
-                itaque
-                id debitis libero ipsam corporis nemo facilis fugit consectetur repellendus incidunt maiores
-                atque
-                doloremque
-                pariatur. Doloremque, error quae. Suscipit doloribus hic animi nulla soluta? Repudiandae velit
-                accusantium
-                suscipit quam ut omnis quasi ipsam aliquam voluptatibus. In tempore esse adipisci asperiores
-                odit quisquam
-                doloribus cum itaque veritatis. Commodi doloribus nesciunt corrupti veritatis sapiente! Eaque
-                mollitia iure
-                et
-                cum ullam fuga aliquid at consequuntur dolorem tenetur optio fugiat iste perferendis esse
-                voluptatibus ipsum
-                asperiores hic eius porro, deserunt quos magni cumque impedit animi. Velit autem cumque vitae
-                veritatis
-                quisquam
-                voluptate et, qui, debitis labore nihil dolore! Veniam ab quis doloribus corporis quod nisi
-                minus quia
-                laboriosam rerum dolorum aliquam debitis, iure et odio deserunt, sed aliquid animi est cumque
-                officia eius
-                voluptates neque? Maiores molestiae dignissimos ipsam qui officia asperiores libero, voluptatem
-                doloremque.
-                Necessitatibus dolor inventore, obcaecati, illo impedit reprehenderit recusandae non quod minima
-                consequuntur
-                autem velit? Quasi non inventore alias ea porro deleniti quidem iusto, molestias delectus. Eum
-                dolores
-                rerum,
-                nihil eius iste natus alias officia in libero corporis error deleniti quos sit cum voluptatum
-                ex. Officiis
-                cum
-                maiores totam veritatis vero, corporis molestiae itaque libero sequi, rerum ab. Aut ut sapiente
-                fugiat
-                provident
-                sequi atque explicabo, magni necessitatibus. Itaque officia laudantium sint illum eveniet nemo
-                tempora
-                obcaecati
-                odit, debitis, reprehenderit, hic consequuntur architecto voluptatum optio! Temporibus, odit.
-                Atque sapiente
-                repudiandae laborum corrupti animi, ipsum reprehenderit dicta sit! Soluta inventore neque
-                placeat corporis
-                facilis incidunt, dolores quo, doloremque, recusandae assumenda tenetur? Eveniet libero quia
-                enim unde
-                consequuntur cumque qui veniam atque voluptates magnam inventore eos dicta id vel illum rerum
-                asperiores
-                vero
-                harum, iure rem autem voluptatibus at! Eaque ducimus obcaecati perspiciatis similique quod ipsam
-                voluptates
-                porro quidem vero suscipit quae, officia accusantium dignissimos soluta vel mollitia eos tenetur
-                commodi
-                natus
-                enim facere aperiam iusto iure. Ullam quidem incidunt, reiciendis quia dignissimos nihil natus
-                eaque dolor
-                nisi
-                quis asperiores voluptatum, quibusdam cumque impedit deleniti sequi error perferendis unde
-                voluptatem neque
-                explicabo aliquam repudiandae. Assumenda tempore totam repellendus rerum aperiam sapiente,
-                labore commodi
-                saepe
-                non et tempora. Adipisci provident, ipsam voluptatem necessitatibus earum porro perspiciatis ab
-                animi iure
-                officiis, quia excepturi rerum magnam, omnis voluptates assumenda doloribus eveniet placeat!
-                Ipsum pariatur
-                inventore hic autem voluptates sunt facere. Repudiandae aliquid eum sequi eligendi corporis esse
-                doloribus
-                ipsa
-                aspernatur non neque enim, eos illum, harum minus quibusdam porro provident reprehenderit
-                quidem, similique
-                ad
-                doloremque. Fugiat a, odio sed animi magnam itaque ipsum omnis odit quis maxime quod culpa porro
-                placeat
-                illo,
-                temporibus natus doloribus. Quis nisi qui corporis ratione fuga, corrupti dolor accusantium
-                minus sunt,
-                delectus
-                tenetur distinctio, eligendi quas.
-
-            </p>
-        </div>
-    </section>
-    <section id="name6-section" class="section-6 bg-success">
-        <div class="container">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus suscipit dolorum ad
-                mollitia
-                aliquam
-                quibusdam minima odit molestias quia vero optio praesentium, adipisci quas ab incidunt iure
-                velit tenetur
-                totam.
-                Eveniet eum repellat dicta ratione alias, quae omnis blanditiis necessitatibus fugit corporis
-                dolores quas
-                dolorum, facilis nobis vitae voluptate, ducimus et? Molestias error soluta ad quidem quas,
-                doloremque vero!
-                Quibusdam ratione recusandae hic praesentium, eius, nam asperiores ullam officiis earum impedit
-                placeat
-                itaque
-                id debitis libero ipsam corporis nemo facilis fugit consectetur repellendus incidunt maiores
-                atque
-                doloremque
-                pariatur. Doloremque, error quae. Suscipit doloribus hic animi nulla soluta? Repudiandae velit
-                accusantium
-                suscipit quam ut omnis quasi ipsam aliquam voluptatibus. In tempore esse adipisci asperiores
-                odit quisquam
-                doloribus cum itaque veritatis. Commodi doloribus nesciunt corrupti veritatis sapiente! Eaque
-                mollitia iure
-                et
-                cum ullam fuga aliquid at consequuntur dolorem tenetur optio fugiat iste perferendis esse
-                voluptatibus ipsum
-                asperiores hic eius porro, deserunt quos magni cumque impedit animi. Velit autem cumque vitae
-                veritatis
-                quisquam
-                voluptate et, qui, debitis labore nihil dolore! Veniam ab quis doloribus corporis quod nisi
-                minus quia
-                laboriosam rerum dolorum aliquam debitis, iure et odio deserunt, sed aliquid animi est cumque
-                officia eius
-                voluptates neque? Maiores molestiae dignissimos ipsam qui officia asperiores libero, voluptatem
-                doloremque.
-                Necessitatibus dolor inventore, obcaecati, illo impedit reprehenderit recusandae non quod minima
-                consequuntur
-                autem velit? Quasi non inventore alias ea porro deleniti quidem iusto, molestias delectus. Eum
-                dolores
-                rerum,
-                nihil eius iste natus alias officia in libero corporis error deleniti quos sit cum voluptatum
-                ex. Officiis
-                cum
-                maiores totam veritatis vero, corporis molestiae itaque libero sequi, rerum ab. Aut ut sapiente
-                fugiat
-                provident
-                sequi atque explicabo, magni necessitatibus. Itaque officia laudantium sint illum eveniet nemo
-                tempora
-                obcaecati
-                odit, debitis, reprehenderit, hic consequuntur architecto voluptatum optio! Temporibus, odit.
-                Atque sapiente
-                repudiandae laborum corrupti animi, ipsum reprehenderit dicta sit! Soluta inventore neque
-                placeat corporis
-                facilis incidunt, dolores quo, doloremque, recusandae assumenda tenetur? Eveniet libero quia
-                enim unde
-                consequuntur cumque qui veniam atque voluptates magnam inventore eos dicta id vel illum rerum
-                asperiores
-                vero
-                harum, iure rem autem voluptatibus at! Eaque ducimus obcaecati perspiciatis similique quod ipsam
-                voluptates
-                porro quidem vero suscipit quae, officia accusantium dignissimos soluta vel mollitia eos tenetur
-                commodi
-                natus
-                enim facere aperiam iusto iure. Ullam quidem incidunt, reiciendis quia dignissimos nihil natus
-                eaque dolor
-                nisi
-                quis asperiores voluptatum, quibusdam cumque impedit deleniti sequi error perferendis unde
-                voluptatem neque
-                explicabo aliquam repudiandae. Assumenda tempore totam repellendus rerum aperiam sapiente,
-                labore commodi
-                saepe
-                non et tempora. Adipisci provident, ipsam voluptatem necessitatibus earum porro perspiciatis ab
-                animi iure
-                officiis, quia excepturi rerum magnam, omnis voluptates assumenda doloribus eveniet placeat!
-                Ipsum pariatur
-                inventore hic autem voluptates sunt facere. Repudiandae aliquid eum sequi eligendi corporis esse
-                doloribus
-                ipsa
-                aspernatur non neque enim, eos illum, harum minus quibusdam porro provident reprehenderit
-                quidem, similique
-                ad
-                doloremque. Fugiat a, odio sed animi magnam itaque ipsum omnis odit quis maxime quod culpa porro
-                placeat
-                illo,
-                temporibus natus doloribus. Quis nisi qui corporis ratione fuga, corrupti dolor accusantium
-                minus sunt,
-                delectus
-                tenetur distinctio, eligendi quas.
-
-            </p>
-        </div>
-    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -663,9 +115,9 @@
             $(".hero-background").toggleClass("overflow-initial");
         });
         $(document).ready(function () {
-            const Section1 = document.querySelector("#name1-section");
-            const Section2 = document.querySelector("#name2-section");
-            const Section3 = document.querySelector("#name3-section");
+            const Section1 = document.querySelector("#Home-section");
+            const Section2 = document.querySelector("#About-section");
+            const Section3 = document.querySelector("#Collection-section");
             const Section4 = document.querySelector("#name4-section");
             const Section5 = document.querySelector("#name5-section");
             const Section6 = document.querySelector("#name6-section");
