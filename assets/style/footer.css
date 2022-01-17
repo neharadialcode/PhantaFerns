@@ -42,21 +42,21 @@
      left: 0;
      bottom: 0;
      background-color: var(--color-red);
-     box-shadow: 0px 0px 22px 2px var(--color-red);
-     animation: line 10s infinite;
+
+     animation: line 5s infinite;
  }
 
  @keyframes line {
      0% {
-         opacity: 1;
+         box-shadow: 0px 0px 12px 1px var(--color-red);
      }
 
      0% {
-         opacity: 0.5;
+         box-shadow: 0px 0px 22px 4px var(--color-red);
      }
 
      100% {
-         width: 1;
+         box-shadow: 0px 0px 12px 1px var(--color-red);
      }
  }
 
@@ -72,4 +72,15 @@
 
  .opacity-09 {
      opacity: 0.9;
+ }
+
+ .l-h-170 {
+     line-height: 170%;
+ }
+
+ @media (max-width:575.98px) {
+     .footer-logo {
+         width: 200px;
+     }
+
  }
