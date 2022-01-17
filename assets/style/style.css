@@ -234,6 +234,52 @@ body {
     background-color: transparent;
 }
 
+/* SCROLL TOP CSS START */
+#scroll {
+    position: fixed;
+    z-index: 2;
+    right: 5%;
+    top: 88%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-yellow);
+    box-shadow: 1px 3px 20px #393939;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    background-image: url("../img/hand-index-thumb.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: moves 2s ease-in-out infinite;
+}
+
+@keyframes moves {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#scroll:hover {
+    opacity: 0.8;
+    box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.09);
+}
+
+#scroll:hover span {
+    border-bottom-color: white;
+}
+
+/* SCROLL TOP CSS END */
 
 /* ================================== COMMON CLASS END ================================================== */
 
