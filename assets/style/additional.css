@@ -1,0 +1,359 @@
+/*========================================== NAVBAR_CSS ==========================================*/
+
+
+.navbar-wrapper .navbar-btns button:hover {
+    background-color: transparent;
+    color: #0ed145;
+}
+
+.navbar-wrapper .navbar-btns button:hover .cmmg-soon {
+    display: inline-block;
+}
+
+.navbar-wrapper .navbar-btns button:hover .launch-app {
+    display: none;
+}
+
+/* NAVBAR-HOVER */
+.navbar-wrapper .nav-items-list a {
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    font-weight: 600;
+    color: #656565;
+    position: relative;
+}
+
+.navbar-wrapper .nav-items-list a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #070e09;
+    -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar-wrapper .nav-items-list a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* NAVBAR-HOVER-END */
+
+.navbar-wrapper .search-icon {
+    z-index: 4;
+}
+
+.navbar-wrapper .hamburger-menu {
+    position: relative;
+    width: 29px;
+    cursor: pointer;
+    height: 25px;
+}
+
+.navbar-wrapper .first {
+    top: 0;
+    -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.navbar-wrapper .sec {
+    top: 11px;
+    background: #ffffff;
+    -webkit-transition: all 0ms 300ms;
+    transition: all 0ms 300ms;
+}
+
+.navbar-wrapper .third {
+    top: 22px;
+    -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.navbar-wrapper .hamburger-menu span {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+}
+
+.navbar-wrapper .animate .sec {
+    opacity: 0;
+}
+
+.navbar-wrapper .animate .first {
+    top: 11px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.navbar-wrapper .animate .third {
+    top: 11px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.navbar-wrapper .hamburger-menu.animate span {
+    background-color: #ffffff;
+}
+
+
+.overlay-btns button:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+@media (max-width:992px) {
+
+    .overlay-links {
+        color: hsl(0, 0%, 100%);
+        opacity: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+    }
+
+    .overlay-links::after {
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 3px;
+        left: 0;
+        bottom: -5px;
+        background-color: white;
+        transition: all .3s ease-in-out;
+        transform: scale(0);
+    }
+
+    .overlay-links:hover::after {
+        width: 100%;
+        transition: all .3s ease-in-out;
+        transform: scale(1);
+    }
+
+    .mobile-view #overlay {
+        -webkit-transition: 0.7s ease;
+        transition: 0.7s ease;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .mobile-view #overlay .left {
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .mobile-view #overlay .left .copyright a {
+        font-size: 18px;
+        -webkit-animation: mymove 0.9s;
+        animation: mymove 0.9s;
+        -webkit-animation-delay: 1.2s;
+        animation-delay: 1.2s;
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .mobile-view #overlay .left .copyright a:hover {
+        text-decoration: none;
+    }
+
+    .mobile-view #overlay .left ul li:nth-child(1) {
+        -webkit-animation: mymove 0.9s;
+        animation: mymove 0.9s;
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .mobile-view #overlay .left ul li:nth-child(2) {
+        -webkit-animation: mymove 0.9s;
+        animation: mymove 0.9s;
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .mobile-view #overlay .left ul li:nth-child(3) {
+        -webkit-animation: mymove 0.9s;
+        animation: mymove 0.9s;
+        -webkit-animation-delay: 0.7s;
+        animation-delay: 0.7s;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .mobile-view #overlay .left ul li:nth-child(4) {
+        -webkit-animation: mymove 0.9s;
+        animation: mymove 0.9s;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .mobile-view #overlay .left ul li:nth-child(5) {
+        -webkit-animation: mymove 0.9s;
+        animation: mymove 0.9s;
+        -webkit-animation-delay: 1.3s;
+        animation-delay: 1.3s;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .mobile-view #overlay .left ul li:nth-child(6) {
+        -webkit-animation: mymove 0.9s;
+        animation: mymove 0.9s;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+
+    .mobile-view #overlay .left ul li a {
+        font-size: 30px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    #overlay {
+        -webkit-transition: 1s ease !important;
+        transition: 1s ease !important;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #0e1bd1;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .mobile-view #overlay .left ul li a {
+        font-size: 40px;
+    }
+}
+
+@-webkit-keyframes mymove {
+    from {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+@keyframes mymove {
+    from {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+.left,
+.right {
+    opacity: 0;
+}
+
+.fix-screen-mobile {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left li,
+.right li {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.left li a,
+.right li a {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (min-width: 576px) {
+
+    .left li a,
+    .right li a {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    #overlay {
+        display: none;
+    }
+}
+
+/* =====================================NAVBAR_CSS_ENDS =====================================*/

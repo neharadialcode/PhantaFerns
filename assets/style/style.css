@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    /*================================== FONT-SIZES ================================================ */
+    --font-xs: 16px;
+    --font-sm: 22px;
+    --font-md: 36px;
+    --font-lg: 48px;
+    --font-xl: 96px;
+    /*================================== COLOR-CLASS ================================================ */
+    --color-white: #FAFAFA;
+    --color-black: #000000;
+    --color-red: #FF005C;
+}
+
+/*====================================== Media-queries-start ======================================== */
+@media (max-width: 575.98px) {
+    :root {
+        /*================================== FONT-SIZES ================================================ */
+        --font-xs: 16px;
+        --font-sm: 22px;
+        --font-md: 36px;
+        --font-lg: 48px;
+        --font-xl: 96px;
+    }
+}
+
+body {
+    font-family: 'Poppins',
+        sans-serif;
+    background-color: var(--color-black);
+}
+
+/*====================================== Media-queries-end =========================================== */
+
+/*====================================== FONT-SIZE CLASS START ======================================= */
+
+.font-xs {
+    font-size: var(--font-xs) !important;
+}
+
+.font-sm {
+    font-size: var(--font-sm) !important;
+}
+
+.font-md {
+    font-size: var(--font-md) !important;
+}
+
+.font-lg {
+    font-size: var(--font-lg) !important;
+}
+
+.font-xl {
+    font-size: var(--font-xl) !important;
+}
+
+/*====================================== FONT-SIZE CLASS END ======================================= */
+/*====================================== FONT-WEIGHT SIZE CLASS START ============================== */
+.fw-light {
+    font-weight: 300 !important;
+}
+
+.fw-normal {
+    font-weight: 400 !important;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-xtra-bold {
+    font-weight: 800 !important;
+}
+
+/*====================================== FONT-WEIGHT SIZE CLASS END ========================================= */
+/*====================================== COLOR CLASS START =================================================== */
+.color-red {
+    color: var(--color-red) !important;
+}
+
+.text-white {
+    color: var(--color-white) !important;
+}
+
+.text-black {
+    color: var(--color-black) !important;
+}
+
+/*===================================== COLOR CLASS END ======================================================== */
+/*===================================== BACKGROUND-COLOR CLASS START =========================================== */
+.bg-color-red {
+    background-color: var(--color-red) !important;
+}
+
+.bg-color-white {
+    background-color: var(--color-white) !important;
+}
+
+.bg-color-black {
+    background-color: var(--color-black) !important;
+}
+
+/*================================== BACKGROUND-COLOR CLASS END ================================================ */
+/*================================== OPACITY CLASS START ========================================================*/
+
+.opacity-07 {
+    opacity: 0.7 !important;
+}
+
+/*================================== OPACITY CLASS END ========================================================*/
+/* ================================== COMMON CLASS START  ================================================== */
+.main-heading {
+    font-size: var(--font-xl);
+    font-weight: 800;
+    color: var(--color-red);
+}
+
+.heading {
+    font-size: var(--font-lg);
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.sub-heading {
+    font-size: var(--font-md);
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.small-heading {
+    font-size: var(--font-sm);
+    font-weight: 600;
+    color: var(--color-danger);
+}
+
+.normal-para {
+    font-size: var(--font-xs);
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+
+.red-btn {
+    font-size: var(--font-sm);
+    font-weight: 600;
+    color: var(--color-white);
+    background: var(--color-red);
+    border: 1px solid transparent;
+    border-radius: 54px;
+    padding: 13px 35px;
+    box-shadow: 0px 0px 42px 4px #FF005C;
+
+}
+
+.common-btn:hover {
+    opacity: 0.8;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* ================================== COMMON CLASS END ================================================== */
